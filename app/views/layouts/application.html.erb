@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FilmCatalogApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application" %>
+  </head>
+
+  <body>
+    <main>
+      <div>
+        <%= flash.notice %>
+      </div>
+
+      <nav>
+        <li>
+          <%= link_to "Home", root_path %>
+        </li>
+        <li>
+          <%= link_to "Cadastrar novo filme", new_film_path %>
+        </li>
+        <li>
+          <%= link_to "Cadastrar novo diretor(a)", new_director_path %>
+        </li>
+        <li>
+          <%= link_to "Cadastrar novo gênero de filme", new_genre_path %>
+        </li>
+      </nav>
+    </main>
+
+    <%= yield %>
+  </body>
+</html>

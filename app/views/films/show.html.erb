@@ -1,0 +1,10 @@
+<h1>Filme: <%= @film.title %></h1>
+<div>
+  <strong>Ano de lançamento: </strong> <%= @film.release_year %>
+</div>
+
+<br/>
+<%= link_to("Editar", edit_film_path) %>
+
+<br/>
+<%= link_to("Voltar", films_path) %>

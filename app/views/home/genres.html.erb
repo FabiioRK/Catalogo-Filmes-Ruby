@@ -1,0 +1,13 @@
+<section id="genres">
+  <h2>Lista de gêneros</h2>
+
+  <% @genres.each do |genre| %>
+    <div>
+      <%= link_to genre.name, genre %>
+    </div>
+  <% end %>
+
+  <br/>
+  <%= link_to("Voltar", root_path) %>
+
+</section>
