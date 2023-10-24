@@ -3,7 +3,7 @@
 
   <% @films.each do |film| %>
     <div>
-      <%= link_to film.title, film %>
+      <%= link_to film.title, film %> - <%= film.release_year%>
     </div>
   <% end %>
 
